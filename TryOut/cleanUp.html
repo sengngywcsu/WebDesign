@@ -1,0 +1,97 @@
+<b>The following will show how the implementation work:</b><br />
+<ul>
+    <li>
+        -Create 2 stacks ( oddStack and evenStack)
+    </li>
+    <li>
+        -Add new element into the stack according to the total of the current elements in the stack. 
+        Example: if there are 5 elements in the stack, the new element will be put into the evenStack. 
+        If there are only 4, the new element will be put into the oddStack.<br />
+    </li>
+    <li>
+        -Remove one element from the stack by calculating where the element is located -- in evenStack or oddStack. 
+        Once we know where the element is located, we then pop all the element from that stack and push it onto another stack. 
+        After doing so, we pop that "another" stack. Finally, we move all the moved element back from the "another" stack to the original stack.<br />
+    </li>
+
+</ul>
+<span style="color: red;">The following will be the source code:</span><br />
+<br />
+<br />
+<pre class="grey"><span style="color: blue;">import</span> java.util.Stack;
+
+<span style="color: blue;">public class</span> twoStacksInOneQueue {
+
+<span style="color: blue;">private</span> Stack<integer>[] stacks = (Stack<integer>[]new Stack [2];
+
+<span style="color: #38761d;">/**
+ Constructor
+ */</span>
+<span style="color: blue;">public</span> twoStacksInOneQueue()
+{  
+    stacks[0] = <span style="color: blue;">new</span> Stack<integer>();
+    stacks[1] = <span style="color: blue;">new</span> Stack <integer>();
+}
+<span style="color: #38761d;">/**
+ add element to queue according to amount of elements.
+ if there are 3 element, the 3rd element is put into odd stack.
+ */</span>
+<span style="color: blue;">public void</span> addToQueue(int num)
+{
+   <span style="color: blue;">int</span> index = (stacks[0].size() + stacks[1].size() ) % 2;
+   stacks[index].push(num);
+}
+
+<span style="color: #38761d;">/**
+ remove an element from queue according to amount of elements
+ */</span>
+<span style="color: blue;">public int</span> removeFromQueue()
+{
+<span style="color: #38761d;">//find where the target element location</span>
+
+
+<span style="color: blue;">int</span> index = (stacks[0].size() + stacks[1].size() ) % 2;
+<span style="color: blue;">int</span> result = removeLast(stacks[index], stacks[index-1]);
+<span style="color: blue;">return</span> result;
+}
+
+<span style="color: blue;">public static int</span> removeLast(Stack<integer> stack, Stack<integer> temp)
+    {
+    <span style="color: blue;">int</span> snapshot = temp.size();<span style="color: #38761d;">//keep track the size of moved stack</span><span style="color: #6aa84f;">
+    </span>
+    <span style="color: blue;">while</span> (!stack.empty())
+    {
+    temp.push(stack.pop());
+    }
+
+    <span style="color: blue;">int</span> result = temp.pop();<span style="color: #38761d;">//pop the last element</span>
+
+    <span style="color: blue;">while</span> (temp.size() &gt; snapshot)<span style="color: #38761d;">//put back into the original stack</span>
+    {
+    stack.push(temp.pop());
+    }
+
+    <span style="color: blue;">return</span> result;
+    }
+
+    <span style="color: blue;">public static void</span> main (String [] arg)
+    {
+    twoStacksInOneQueue myQueue = <span style="color: blue;">new</span> twoStacksInOneQueue();
+    <span style="color: blue;"> for</span> (<span style="color: blue;">int</span> i = 0; i&lt; 4; i++)
+    {
+    myQueue.addToQueue(i+1);
+    }
+
+    myQueue.removeFromQueue();
+    myQueue.removeFromQueue();
+    myQueue.removeFromQueue();
+    myQueue.removeFromQueue();
+    }
+    </integer></integer>
+</pre>
+<style>
+    .grey{
+        background-color: #dedede;
+    }
+</style>
+
