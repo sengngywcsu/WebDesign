@@ -1,260 +1,338 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>First Index</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"></head>
+<head>
+	
+	
+	
+	
+	<title>First Index</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> </head>
 
-    <body>
-        <div class="bodyContainer">
-            <!--=================================Navigation bar==========================--->
-            <div class="navContainer">
-                <div class="navigator">
-                    <ul>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Home</a> </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Devices</a>
-                                <div class="dropdown-content"> <a href="#">Microsoft Surface</a> <a href="#">PCs &amp; tablets</a> <a href="#">Xbox</a> <a href="#">Virtual reality</a> <a href="#">Accessories</a> <a href="#">Windows phone</a> <a href="#">Microsft Band</a> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Software</a>
-                                <div class="dropdown-content"> <a href="#">Office</a> <a href="#">Windows</a> <a href="#">Additional software</a> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Apps</a>
-                                <div class="dropdown-content"> <a href="#">All apps</a> <a href="#">Windows apps</a> <a href="#">Windows phone apps</a> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Games</a>
-                                <div class="dropdown-content"> <a href="#">Xbox One games</a> <a href="#">Xbox 360 games</a> <a href="#">PC games</a> <a href="#">Windows games</a> <a href="#">Windows phone games</a> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Entertainment</a>
-                                <div class="dropdown-content"> <a href="#">All entertainment</a> <a href="#">Movies &amp; TV</a> <a href="#">Music</a> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown"> <a class="dropbtn">Business &amp; Education</a>
-                                <div class="dropdown-content"> <a href="#">Business Store</a> <a href="#">Education Store</a> <a href="#">Developer</a> </div>
-                            </div>
-                        </li>                        
-                       
-                    </ul>   
-                       
-                </div>
-                
-                <div class="form"> 
-                    <form>
-                        <input type="text" name="search" placeholder="Search">
-                    </form>
-                </div>
-               
-            </div>
-            <!--=============================== Slide Show ================================--->
-            <div class="slideShow">
-                <div class="slideshow-container">
-                    <div class="mySlides fade"> <img src="image/slideShow1.jpg" style="width:100%"> </div>
-                    <div class="mySlides fade"> <img src="image/slideShow2.jpg" style="width:100%"> </div>
-                    <div class="mySlides fade"> <img src="image/pic1.jpg" style="width:100%"> </div>
-                    <div class="mySlides fade"> <img src="image/pic2.jpg" style="width:100%"> </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    <div style="text-align:center" class="slideShowDot">
-                        <ul>
-                            <li> <span class="dot" onclick="currentSlide(1)"></span> </li>
-                            <li> <span class="dot" onclick="currentSlide(2)"></span> </li>
-                            <li> <span class="dot" onclick="currentSlide(3)"></span> </li>
-                            <li> <span class="dot" onclick="currentSlide(4)"></span> </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--============================== Script for slideShow ================================--->
-                <script>
-                    var slideIndex = 1;
-                    setInterval(function () {
-                        showSlides(slideIndex += 1)
-                    }, 4000); //auto slide
-                    showSlides(slideIndex);
+<body>
+	<div class="bodyContainer">
+		<div class="logo"> <img src="image/logo.png">
+			<div class="form">
+				<form>
+					<input type="text" name="search" placeholder="Search"> </form>
+			</div>
+		</div>
+		<!--=================================Navigation bar==========================--->
+		<div class="navContainer">
+			<div class="navigator">
+				<ul>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Home</a> </div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Operating System</a>
+							<div class="dropdown-content"> <a href="#">Windows software</a> <a href="#">Mac software</a> <a href="#">Linux software</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Apps</a>
+							<div class="dropdown-content"> <a href="#">All apps</a> <a href="#">Windows apps</a> <a href="#">iOS apps</a> <a href="#">Android apps</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Games</a>
+							<div class="dropdown-content"> <a href="#">Windows games</a> <a href="#">Linux games</a> <a href="#">Mac games</a> <a href="#">Xbox games</a> <a href="#">PSP games</a> <a href="#">iSO games</a><a href="#">Android games</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Entertainment</a>
+							<div class="dropdown-content"> <a href="#">All entertainment</a> <a href="#">Free movies</a> <a href="#">Free music</a> <a href="#">Free TV shows</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Software</a>
+							<div class="dropdown-content"> <a href="#">Business software</a> <a href="#">Education software</a> <a href="#">Developer software</a> </div>
+						</div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">Help &amp; Support</a> </div>
+					</li>
+					<li>
+						<div class="dropdown"> <a class="dropbtn">About Us</a> </div>
+					</li>
+					<li>
+						<div class="socialIcon" ><img src="image/facebookIcon.png" style="width:95%"/></div>
+					</li>					
+					<li>
+						<div class="socialIcon" ><img  src="image/twitterIcon.png"  style="width:95%"/></div>
+					</li>					
+					<li>
+						<div class="socialIcon" ><img src="image/instragramIcon.png"  style="width:95%"/></div>
+					</li>
+				</ul>
+				<div class="login"> <a href="#">Login</a> </div>
+			</div>
+		</div>
+		<!--=============================== Slide Show ================================--->
+		<div class="slideShow">
+			<div class="slideshow-container">
+				<div class="mySlides fade"> <img src="image/visualstudio.jpg" style="width:100%"></div>
+				<div class="mySlides fade"> <img src="image/firefox.jpg" style="width:100%"> </div>
+				<div class="mySlides fade"> <img src="image/atom.jpg" style="width:100%"> </div>
+				
+				<div class="mySlides fade"> <img src="image/ccleaner.jpg" style="width:100%"> </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div style="text-align:center" class="slideShowDot">
+					<ul>
+						<li> <span class="dot" onclick="currentSlide(1)"></span> </li>
+						<li> <span class="dot" onclick="currentSlide(2)"></span> </li>
+						<li> <span class="dot" onclick="currentSlide(3)"></span> </li>
+						<li> <span class="dot" onclick="currentSlide(4)"></span> </li>
+					</ul>
+				</div>
+			</div>
+			<!--============================== Script for slideShow ================================--->
+			<script>
+				var slideIndex = 1;
+				setInterval(function () {
+					showSlides(slideIndex += 1)
+				}, 10000); //auto slide
+				showSlides(slideIndex);
 
-                    function plusSlides(n) {
-                        showSlides(slideIndex += n);
-                    }
+				function plusSlides(n) {
+					showSlides(slideIndex += n);
+				}
 
-                    function currentSlide(n) {
-                        showSlides(slideIndex = n);
-                    }
+				function currentSlide(n) {
+					showSlides(slideIndex = n);
+				}
 
-                    function showSlides(n) {
-                        var i;
-                        var slides = document.getElementsByClassName("mySlides");
-                        var dots = document.getElementsByClassName("dot");
-                        if (n > slides.length) {
-                            slideIndex = 1
-                        }
-                        if (n < 1) {
-                            slideIndex = slides.length
-                        }
-                        for (i = 0; i < slides.length; i++) {
-                            slides[i].style.display = "none";
-                        }
-                        for (i = 0; i < dots.length; i++) {
-                            dots[i].className = dots[i].className.replace(" active", "");
-                        }
-                        slides[slideIndex - 1].style.display = "block";
-                        dots[slideIndex - 1].className += " active";
-                    }
-                </script>
-            </div>
-            <!--============================== Floating City====================== -->
-        </div>
-        <!--================================= End of Body Container====================== -->
-        <div class="midBody">
-            <div class="city">
-                <a href="#">
-                    <img src="image/Ofc365_MultiDevice_0301_368x207_EN_US.jpg" width=" 97%">
-                    <h3>Office 365</h3>
-                    <p>Collaborate anywhere, anytime.</p>
-                    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                </a>
-            </div>
-            <div class="city">
-                <a href="#">
-                    <img src="image/REBiHj368.jpg" width="97%">
-                    <h3>Study and Play</h3>
-                    <p>See student offers on PCs, apps, and more.</p>
-                    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-                </a>
-            </div>
-            <div class="city">
-                <a href="#">
-                    <img src="image/XboxOneS_368x207.jpg" width="97%">
-                    <h3>Xbox One S</h3>
-                    <p>Sleeker, slimmer, sharper. Pre-order now.</p>
-                    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
-                </a>
-            </div>
-            <div class="leftSide">
-                <div class="common-post">
-                    </br>
-                <//br>
-            <h2>Community SpotLight</h2> </br>
-        <h3>
-            <img src="image/userIcon.png">
-            <a href="#">
-                Announcing ASP.NET Core 1.0
-            </a>
-        </h3>
-        <p>Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-        </div>
-    <div class="common-post">
-        <h3>
-            <img src="image/userIcon.png">
-            <a href="#">
-                Preventing XSRF in AngularJS Apps with ASP.NET CORE Anti-Forgery Middleware
-            </a>
-        </h3>
-        <p>Here's a tutorial from Fiyaz Hasan covering anti-forgery in Angular / ASP.NET Core applications. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-    </div>
-    <div class="common-post">
-        <h3>
-            <img src="image/userIcon.png">
-            <a href="#">
-                Running ASP.NET Core 1.0-RC2 in Docker
-            </a>
-        </h3>
-        <p>Sergio Sisternes walks through the process of deploying an ASP.NET Core application to Docker, along with some interesting "extra credit" steps once that's running. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-    </div>
-    <div class="common-post">
-        <h3>
-            <img src="image/userIcon.png">
-            <a href="#">
-                Build customizable Language Switcher Tag Helper with Bootstrap
-            </a>
-        </h3>
-        <p>Hisham Bin Ateya shares a nice Bootstrap based language switcher tag helper. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-        <br> </div>
-    </div>
-<div class="rightSide">
-
-    <a href="#"><img src="image/Ofc365_Enterprise_1201_368x207_EN_US.jpg"></a>    
-                                      
-    <a href="#"><img src="image/VisualStudio_368x207.png"></a>
-    <a href="#"><img src="image/Win10_EntEval_0729_368x207_EN_US.jpg"></a>
-</div>
-</div>
-<!--======================= Footer ===========================-->
-<div class="footer">
-    <div class="footContainer">
-
-    <div class="middleFooter">
-        <p><h6>Learn</h6></p>
-        <a href="#" ><p>Windows</p></a>
-        <a href="#" ><p>Office</p></a>
-        <a href="#" ><p>Skype</p></a>
-        <a href="#" ><p>Outlook</p></a>
-        <a href="#" ><p>OneDrive</p></a>
-        <a href="#" ><p>MSN</p></a>
-    </div>
-
-    <div class="middleFooter">
-        <p><h6>Devices</h6></p>
-        <a href="#" ><p>Microsoft Surface</p></a>
-        <a href="#" ><p>Xbox</p></a>
-        <a href="#" ><p>PC and laptops</p></a>
-        <a href="#" ><p>Microsoft Lumia</p></a>
-        <a href="#" ><p>Microsft Band</p></a>
-        <a href="#" ><p>Microsoft HoloLens</p></a>
-    </div> 
-     <div class="middleFooter">
-        <p><h6></h6>Microsoft Store</p>
-        <a href="#" ><p>View account</p></a>
-        <a href="#" ><p>Order tracking</p></a>
-        <a href="#" ><p>Retail store locations</p></a>
-        <a href="#" ><p>Returns</p></a>
-        <a href="#" ><p>Sales &amp; support</p></a>        
-    </div>
-
-     <div class="middleFooter">
-        <p><h6></h6>Downloads</p>
-        <a href="#" ><p>Download Center</p></a>
-        <a href="#" ><p>Windows 10 Apps</p></a>
-        <a href="#" ><p>Office Apps</p></a>
-        <a href="#" ><p>Microsoft Lumia Apps</p></a>
-        <a href="#" ><p>Internet Explorer</p></a>
-        
-    </div>
-
-     <div class="middleFooter">
-        <p><h6>Values</h6></p>
-        <a href="#" ><p>Diversity and inclusion</p></a>
-        <a href="#" ><p>Accessibility</p></a>
-        <a href="#" ><p>Environment</p></a>
-        <a href="#" ><p>Microsoft Philanthropies</p></a>
-        <a href="#" ><p>Corporate Social Responsibility</p></a>
-        <a href="#" ><p>Privacy at Microsoft</p></a>
-    </div>
-
-     <div class="middleFooter">
-        <p><h6>Company</h6></p>
-        <a href="#" ><p>Careers</p></a>
-        <a href="#" ><p>About Microsoft</p></a>
-        <a href="#" ><p>Company news</p></a>
-        <a href="#" ><p>Investors</p></a>
-        <a href="#" ><p>Research</p></a>
-        <a href="#" ><p>Site map</p></a>
-    </div>
-
-
-</div>
-
-
-</div>
+				function showSlides(n) {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					if (n > slides.length) {
+						slideIndex = 1
+					}
+					if (n < 1) {
+						slideIndex = slides.length
+					}
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+				}
+			</script>
+		</div>
+		<!--============================== Floating City====================== -->
+	</div>
+	<!--================================= End of Body Container====================== -->
+	<div class="afterSlide">
+		<p> Our mission is to empower every person and every organization on the planet to achieve more with free software! </p>
+	</div>
+	<!----================================== End of afterSlide =--------------	-->
+	<div class="midBody">
+		<div class="city">
+			<a href="#"> <img src="image/touchvpn.jpg" width=" 100%">
+				<h3>Office 365</h3>
+				<p>Collaborate anywhere, anytime.</p>
+				<p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+			</a>
+		</div>
+		<div class="city">
+			<a href="#"> <img src="image/browserstack.jpg" width="100%">
+				<h3>Study and Play</h3>
+				<p>See student offers on PCs, apps, and more.</p>
+				<p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+			</a>
+		</div>
+		<div class="city">
+			<a href="#"> <img src="image/pinterest.jpg" width="100%">
+				<h3>Xbox One S</h3>
+				<p>Sleeker, slimmer, sharper. Pre-order now.</p>
+				<p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+			</a>
+		</div>
+<!--
+		<div class="leftSide">
+			<div class="common-post">
+				</br>
+				<//br>
+				<h2>Community SpotLight</h2> </br>
+				<h3>
+			<img src="image/userIcon.png">
+			<a href="#">
+				Announcing ASP.NET Core 1.0
+			</a>
+		</h3>
+				<p>Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+			</div>
+			<div class="common-post">
+				<h3>
+			<img src="image/userIcon.png">
+			<a href="#">
+				Preventing XSRF in AngularJS Apps with ASP.NET CORE Anti-Forgery Middleware
+			</a>
+		</h3>
+				<p>Here's a tutorial from Fiyaz Hasan covering anti-forgery in Angular / ASP.NET Core applications. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+			</div>
+			<div class="common-post">
+				<h3>
+			<img src="image/userIcon.png">
+			<a href="#">
+				Running ASP.NET Core 1.0-RC2 in Docker
+			</a>
+		</h3>
+				<p>Sergio Sisternes walks through the process of deploying an ASP.NET Core application to Docker, along with some interesting "extra credit" steps once that's running. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+			</div>
+			<div class="common-post">
+				<h3>
+			<img src="image/userIcon.png">
+			<a href="#">
+				Build customizable Language Switcher Tag Helper with Bootstrap
+			</a>
+		</h3>
+				<p>Hisham Bin Ateya shares a nice Bootstrap based language switcher tag helper. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+				<br> </div>
+		</div>
+		<div class="rightSide">
+			<a href="#"><img src="image/Ofc365_Enterprise_1201_368x207_EN_US.jpg"></a>
+			<a href="#"><img src="image/VisualStudio_368x207.png"></a>
+			<a href="#"><img src="image/Win10_EntEval_0729_368x207_EN_US.jpg"></a>
+		</div>
+-->
+	</div>
+	<!--======================= Footer ===========================-->
+	<div class="footer">
+		<div class="footContainer">
+			<div class="middleFooter">
+				<p>
+					<h6>Learn</h6></p>
+				<a href="#">
+					<p>Windows</p>
+				</a>
+				<a href="#">
+					<p>Office</p>
+				</a>
+				<a href="#">
+					<p>Skype</p>
+				</a>
+				<a href="#">
+					<p>Outlook</p>
+				</a>
+				<a href="#">
+					<p>OneDrive</p>
+				</a>
+				<a href="#">
+					<p>MSN</p>
+				</a>
+			</div>
+			<div class="middleFooter">
+				<p>
+					<h6>Devices</h6></p>
+				<a href="#">
+					<p>Downtify Surface</p>
+				</a>
+				<a href="#">
+					<p>Xbox</p>
+				</a>
+				<a href="#">
+					<p>PC and laptops</p>
+				</a>
+				<a href="#">
+					<p>Downtify Lumia</p>
+				</a>
+				<a href="#">
+					<p>Microsft Band</p>
+				</a>
+				<a href="#">
+					<p>Downtify HoloLens</p>
+				</a>
+			</div>
+			<div class="middleFooter">
+				<p>
+					<h6>Downtify Store</h6></p>
+				<a href="#">
+					<p>View account</p>
+				</a>
+				<a href="#">
+					<p>Order tracking</p>
+				</a>
+				<a href="#">
+					<p>Retail store locations</p>
+				</a>
+				<a href="#">
+					<p>Returns</p>
+				</a>
+				<a href="#">
+					<p>Sales &amp; support</p>
+				</a>
+			</div>
+			<div class="middleFooter">
+				<p>
+					<h6>Downloads</h6></p>
+				<a href="#">
+					<p>Download Center</p>
+				</a>
+				<a href="#">
+					<p>Windows 10 Apps</p>
+				</a>
+				<a href="#">
+					<p>Office Apps</p>
+				</a>
+				<a href="#">
+					<p>Downtify Lumia Apps</p>
+				</a>
+				<a href="#">
+					<p>Internet Explorer</p>
+				</a>
+			</div>
+			<div class="middleFooter">
+				<p>
+					<h6>Values</h6></p>
+				<a href="#">
+					<p>Diversity and inclusion</p>
+				</a>
+				<a href="#">
+					<p>Accessibility</p>
+				</a>
+				<a href="#">
+					<p>Environment</p>
+				</a>
+				<a href="#">
+					<p>Downtify Philanthropies</p>
+				</a>
+				<a href="#">
+					<p>Corporate Social Responsibility</p>
+				</a>
+				<a href="#">
+					<p>Privacy at Downtify</p>
+				</a>
+			</div>
+			<div class="middleFooter">
+				<p>
+					<h6>Company</h6></p>
+				<a href="#">
+					<p>Careers</p>
+				</a>
+				<a href="#">
+					<p>About Downtify</p>
+				</a>
+				<a href="#">
+					<p>Company news</p>
+				</a>
+				<a href="#">
+					<p>Investors</p>
+				</a>
+				<a href="#">
+					<p>Research</p>
+				</a>
+				<a href="#">
+					<p>Site map</p>
+				</a>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
