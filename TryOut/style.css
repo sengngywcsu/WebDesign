@@ -1,3 +1,4 @@
+
 /*========= Logo =======*/
 
 .logo {
@@ -149,6 +150,7 @@ li.dropdown {
 
 body {
 	text-align: center;
+	font-family: sans-serif;
 }
 
 
@@ -324,6 +326,9 @@ body {
 	text-decoration: none;
 }
 
+.city p{
+	padding: 20px;
+}
 .midBody {
 	max-width: 1300px;
 	margin: auto;
@@ -432,7 +437,7 @@ body {
 	padding-top: 7px;
 }
 
-input[type=text] {
+#searchBar {
 	width: 100%;
 	height: 32px;
 	border: 1px solid #c1c1c1;
@@ -446,7 +451,7 @@ input[type=text] {
 	transition: width 0.4s ease-in-out;
 }
 
-input[type=text]:focus {
+#searchBar:focus {
 	width: 100%;
 	color: #bfbebe;
 }
@@ -472,3 +477,104 @@ input[type=text]:focus {
 .socialIcon img:hover{
 	
 }
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 200; /* Sit on top */
+	left: 0;
+	
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 200; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+	padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5px auto; /* 15% from the top and centered */
+	border: 1px solid #888;
+	width: 27%; /* Could be more or less, depending on screen size */
+	margin-top: 113px;
+	
+}
+
+/* The Close Button */
+.close {
+	/* Position it in the top right corner outside of the modal */
+	position: absolute;
+	right: 25px;
+	top: 0; 
+	color: #ff0000;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/*-------------- Form, btn, input ---------------*/
+.submitBtn{
+	margin:13px 0; 
+	width:85%; 
+	padding: 15px; 
+	margin-top:43px; 
+	background-color:#009dff; 
+	color:white;
+	border: none; 
+	cursor: pointer;
+}
+
+.submitBtn:hover{
+	background-color: #ff5722;
+}
+
+.inputForm , .inputForm:focus{
+	margin:13px 0; 
+	width:85%; 
+	padding: 7px;
+	outline: none;
+	color: #888;
+}
+
+
