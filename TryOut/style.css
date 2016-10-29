@@ -336,16 +336,16 @@ body {
 
 .leftSide {
 	float: left;
-	width: 785px;
+	width: 812px;
 	margin: auto;
 	text-align: left;
 	font-size: 12px;
-	border-radius: 5px;
-	background: #2e2e2e;
-	color: white;
-	box-shadow: 0px 3px 10px #888888;
+	//border-radius: 5px;
+	border: 1px solid #dddcdc;
+	color: black;
+	//box-shadow: 0px 3px 10px #888888;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 26px;
 }
 
 .common-post {
@@ -357,7 +357,7 @@ body {
 
 .leftSide h3 {
 	text-decoration: none;
-	color: #52d4ff;
+	color: black;
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -395,16 +395,15 @@ body {
 
 .rightSide img {
 	float: right;
-	width: 383px;
-	margin: auto;
+	width: 378px;	
 	height: 200px;
 	font-size: 12px;
-	border-radius: 5px;
+	//border-radius: 5px;
 	background-color: black;
 	color: white;
-	box-shadow: 0px 3px 10px #888888;
+	//box-shadow: 0px 3px 10px #888888;
 	margin-top: 20px;
-	margin-right: 12px;
+	margin-right: 30px;
 }
 
 .middleFooter {
