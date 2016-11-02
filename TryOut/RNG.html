@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Random Number Generator</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	<p>Generate 7 random hours ranges from a staring hours to ending hours using 24H format:</p>
+    <div class="content"> From:
+        <input type="tex" id="hourFrom"> To:
+        <input type="text" id="hourTo">
+        <br>
+        <button onclick="looper()">Generate</button>
+        <p id="display"></p>
+    </div>
+</body>
+
+</html>
+<style>
+    .content {
+        background-color: lightgrey;
+    }
+    
+    input {
+        min-width: 40px;
+        border-radius: 3px;
+        padding: 10px;
+    }
+    
+    input[type=submit] {
+        padding: 4px;
+        background-color: green;
+        border-radius: 3px;
+    }
+</style>
+<script>
+    function looper() {
+        //get vaule from the input
+        var From = document.getElementById("hourFrom").value;
+        var To = document.getElementById("hourTo").value;
+        var generateResult = []; //array
+        var result;
+        for (var i = 0; i < 7; i++) {
+            var hours = generateRandomNumber(From, To);
+            var mins = generateRandomNumber(00, 59);
+            //("0" + mins).slice(-2) .... making 2 digit
+            generateResult[i] = (hours + ":" + ("0" + mins).slice(-2));
+        }
+        result = generateResult.join("<br>"); //adding break between the array
+        document.getElementById("display").innerHTML = result; //display on the html
+    }
+    //Random Number Generator from min to max (all included)
+    function generateRandomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+</script>
