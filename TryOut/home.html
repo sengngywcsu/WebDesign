@@ -1,354 +1,354 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<title>Downtify</title>
-		<link rel="stylesheet" href="style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> </head>
+<head>
+    <title>Downtify</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> </head>
 
-	<body onload="document.getElementById('id01').style.display='block'">
-		<!-- The Modal -->
-		<div id="id01" class="modal"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-			<!-- Modal Content -->
-			<form class="modal-content animate" action="action_page.php">
-				<div class="imgcontainer" style="margin:30px 0; "> <img src="image/avatar.png" alt="Avatar" class="avatar" style="height:143px"> </div>
-				<div>
-					<label style="float:left; margin-left:37px; font:"><b>Username</b></label>
-					<br>
-					<input class="inputForm" type="text" name="name" required />
-					<br>
-					<label style="float:left; margin-left:37px"><b>Password</b></label>
-					<br>
-					<input class="inputForm" type="password" name="psw" required/>
-					<br>
-					<button class="submitBtn" type="button" onclick="document.getElementById('id01').style.display='none';">Sign Up</button>
-					<br>
-					<p>&nbsp;</p>
-				</div>
-			</form>
-		</div>
-		<!----------------- Modal Script ---------------------->
-		<script>
-			// Get the modal
-			var modal = document.getElementById('id01');
-		</script>
-		<!----------- End of Modal ------------------------------->
-		<div class="bodyContainer">
-			<div class="logo"> <img src="image/logo.png">
-				<div class="form">
-					<form>
-						<input id="searchBar" type="text" name="search" placeholder="Search"> </form>
-				</div>
-			</div>
-			<!--=================================Navigation bar==========================--->
-			<div class="navContainer">
-				<div class="navigator">
-					<ul>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="home.html">Home</a> </div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="operatingsystem.html">Operating System</a>
-								<div class="dropdown-content"> <a href="404.html">Windows software</a> <a href="404.html">Mac software</a> <a href="404.html">Linux software</a> </div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn">Apps</a>
-								<div class="dropdown-content"> <a href="404.html">All apps</a> <a href="404.html">Windows apps</a> <a href="404.html">iOS apps</a> <a href="404.html">Android apps</a> </div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="game.html">Games</a>
-								<div class="dropdown-content"> <a href="404.html">Windows games</a> <a href="404.html">Linux games</a> <a href="404.html">Mac games</a> <a href="404.html">Xbox games</a> <a href="404.html">PSP games</a> <a href="404.html">iSO games</a><a href="404.html">Android games</a> </div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="entertainment.html">Entertainment</a>
-								<div class="dropdown-content"> <a href="404.html">All entertainment</a> <a href="404.html">Free movies</a> <a href="404.html">Free music</a> <a href="404.html">Free TV shows</a></div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="software.html">Software</a>
-								<div class="dropdown-content"> <a href="404.html">Business software</a> <a href="404.html">Education software</a> <a href="404.html">Developer software</a> </div>
-							</div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="contact.html">Help &amp; Support</a> </div>
-						</li>
-						<li>
-							<div class="dropdown"> <a class="dropbtn" href="about.html">About Us</a> </div>
-						</li>
-						<li>
-							<div class="socialIcon"><img src="image/facebookIcon.png" style="width:95%" /></div>
-						</li>
-						<li>
-							<div class="socialIcon"><img src="image/twitterIcon.png" style="width:95%" /></div>
-						</li>
-						<li>
-							<div class="socialIcon"><img src="image/instragramIcon.png" style="width:95%" /></div>
-						</li>
-					</ul>
-					<div class="login"> <a href="404.html">Login</a> </div>
-				</div>
-			</div>
-			<!--=============================== Slide Show ================================--->
-			<div class="slideShow">
-				<div class="slideshow-container">
-					<div class="mySlides fade"> <img src="image/visualstudio.jpg" style="width:100%"></div>
-					<div class="mySlides fade"> <img src="image/firefox.jpg" style="width:100%"> </div>
-					<div class="mySlides fade"> <img src="image/atom.jpg" style="width:100%"> </div>
-					<div class="mySlides fade"> <img src="image/ccleaner.jpg" style="width:100%"> </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
-					<div style="text-align:center" class="slideShowDot">
-						<ul>
-							<li> <span class="dot" onclick="currentSlide(1)"></span> </li>
-							<li> <span class="dot" onclick="currentSlide(2)"></span> </li>
-							<li> <span class="dot" onclick="currentSlide(3)"></span> </li>
-							<li> <span class="dot" onclick="currentSlide(4)"></span> </li>
-						</ul>
-					</div>
-				</div>
-				<!--============================== Script for slideShow ================================--->
-				<script>
-					var slideIndex = 1;
-					setInterval(function () {
-						showSlides(slideIndex += 1)
-					}, 10000); //auto slide
-					showSlides(slideIndex);
+<body onload="document.getElementById('id01').style.display='block'">
+    <!-- The Modal -->
+    <div id="id01" class="modal"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="action_page.php">
+            <div class="imgcontainer" style="margin:30px 0; "> <img src="image/avatar.png" alt="Avatar" class="avatar" style="height:143px"> </div>
+            <div>
+                <label style="float:left; margin-left:37px; font:"><b>Username</b></label>
+                <br>
+                <input class="inputForm" type="text" name="name" required />
+                <br>
+                <label style="float:left; margin-left:37px"><b>Password</b></label>
+                <br>
+                <input class="inputForm" type="password" name="psw" required/>
+                <br>
+                <button class="submitBtn" type="button" onclick="document.getElementById('id01').style.display='none';">Sign Up</button>
+                <br>
+                <p>&nbsp;</p>
+            </div>
+        </form>
+    </div>
+    <!-- ================ Modal Script ================== -->
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    </script>
+    <!-- End of Modal -->
+    <div class="bodyContainer">
+        <div class="logo"> <img src="image/logo.png">
+            <div class="form">
+                <form>
+                    <input id="searchBar" type="text" name="search" placeholder="Search"> </form>
+            </div>
+        </div>
+        <!-- =================================Navigation bar========================== -->
+        <div class="navContainer">
+            <div class="navigator">
+                <ul>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="home.html">Home</a> </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="operatingsystem.html">Operating System</a>
+                            <div class="dropdown-content"> <a href="404.html">Windows software</a> <a href="404.html">Mac software</a> <a href="404.html">Linux software</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn">Apps</a>
+                            <div class="dropdown-content"> <a href="404.html">All apps</a> <a href="404.html">Windows apps</a> <a href="404.html">iOS apps</a> <a href="404.html">Android apps</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="game.html">Games</a>
+                            <div class="dropdown-content"> <a href="404.html">Windows games</a> <a href="404.html">Linux games</a> <a href="404.html">Mac games</a> <a href="404.html">Xbox games</a> <a href="404.html">PSP games</a> <a href="404.html">iSO games</a><a href="404.html">Android games</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="entertainment.html">Entertainment</a>
+                            <div class="dropdown-content"> <a href="404.html">All entertainment</a> <a href="404.html">Free movies</a> <a href="404.html">Free music</a> <a href="404.html">Free TV shows</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="software.html">Software</a>
+                            <div class="dropdown-content"> <a href="404.html">Business software</a> <a href="404.html">Education software</a> <a href="404.html">Developer software</a> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="contact.html">Help &amp; Support</a> </div>
+                    </li>
+                    <li>
+                        <div class="dropdown"> <a class="dropbtn" href="about.html">About Us</a> </div>
+                    </li>
+                    <li>
+                        <div class="socialIcon"><img src="image/facebookIcon.png" style="width:95%" /></div>
+                    </li>
+                    <li>
+                        <div class="socialIcon"><img src="image/twitterIcon.png" style="width:95%" /></div>
+                    </li>
+                    <li>
+                        <div class="socialIcon"><img src="image/instragramIcon.png" style="width:95%" /></div>
+                    </li>
+                </ul>
+                <div class="login"> <a href="404.html">Login</a> </div>
+            </div>
+        </div>
+        <!--=============================== Slide Show ================================ -->
+        <div class="slideShow">
+            <div class="slideshow-container">
+                <div class="mySlides fade"> <img src="image/visualstudio.jpg" style="width:100%"></div>
+                <div class="mySlides fade"> <img src="image/firefox.jpg" style="width:100%"> </div>
+                <div class="mySlides fade"> <img src="image/atom.jpg" style="width:100%"> </div>
+                <div class="mySlides fade"> <img src="image/ccleaner.jpg" style="width:100%"> </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align:center" class="slideShowDot">
+                    <ul>
+                        <li> <span class="dot" onclick="currentSlide(1)"></span> </li>
+                        <li> <span class="dot" onclick="currentSlide(2)"></span> </li>
+                        <li> <span class="dot" onclick="currentSlide(3)"></span> </li>
+                        <li> <span class="dot" onclick="currentSlide(4)"></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <!--============================== Script for slideShow ================================ -->
+            <script>
+            var slideIndex = 1;
+            setInterval(function() {
+                showSlides(slideIndex += 1)
+            }, 10000); //auto slide
+            showSlides(slideIndex);
 
-					function plusSlides(n) {
-						showSlides(slideIndex += n);
-					}
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
-					function currentSlide(n) {
-						showSlides(slideIndex = n);
-					}
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-					function showSlides(n) {
-						var i;
-						var slides = document.getElementsByClassName("mySlides");
-						var dots = document.getElementsByClassName("dot");
-						if (n > slides.length) {
-							slideIndex = 1
-						}
-						if (n < 1) {
-							slideIndex = slides.length
-						}
-						for (i = 0; i < slides.length; i++) {
-							slides[i].style.display = "none";
-						}
-						for (i = 0; i < dots.length; i++) {
-							dots[i].className = dots[i].className.replace(" active", "");
-						}
-						slides[slideIndex - 1].style.display = "block";
-						dots[slideIndex - 1].className += " active";
-					}
-				</script>
-			</div>
-			<!--============================== Floating City====================== -->
-		</div>
-		<!--================================= End of Body Container====================== -->
-		<div class="afterSlide">
-			<p> Our mission is to empower every person and every organization on the planet to achieve more with free software! Try out our <a href="RNG.html">24 hours timing generator!</a> </p>
-		</div>
-		<!----================================== End of afterSlide =--------------	-->
-		<div class="midBody">
-			<div class="city">
-				<a href="404.html"> <img src="image/touchvpn.jpg" width=" 100%">
-					<h3>Touch VPN</h3>
-					<p>Unable to access some websites? Worried about unprotected Wi-Fi hotspots? Want to be anonymous and protected from surveillance and hackers? Touch VPN – the Secure VPN Proxy– is the best solution!</p>
-				</a>
-			</div>
-			<div class="city">
-				<a href="404.html"> <img src="image/browserstack.jpg" width="100%">
-					<h3>BrowserStack</h3>
-					<p>When you are ready to test the website: - Click on the extension button - Select your OS + Browser combination This will open up your website through BrowserStack in your selected browser + OS. </p>
-				</a>
-			</div>
-			<div class="city">
-				<a href="404.html"> <img src="image/pinterest.jpg" width="100%">
-					<h3>Pinterest</h3>
-					<p>Save creative ideas from around the web with the official Pinterest Save button for your browser. Just click the Pinterest button next time you find something interesting that you want to save for later. </p>
-				</a>
-			</div>
-			<div class="leftSide">
-				<div class="common-post">
-					</br>
-				<//br>
-			<h2>Community SpotLight</h2> </br>
-		<h3>
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+            </script>
+        </div>
+        <!--============================== Floating City====================== -->
+    </div>
+    <!--================================= End of Body Container====================== -->
+    <div class="afterSlide">
+        <p> Our mission is to empower every person and every organization on the planet to achieve more with free software! Try out our <a href="RNG.html">24 hours timing generator!</a> </p>
+    </div>
+    <!-- ================================== End of afterSlide =========================	-->
+    <div class="midBody">
+        <div class="city">
+            <a href="404.html"> <img src="image/touchvpn.jpg" width=" 100%">
+                <h3>Touch VPN</h3>
+                <p>Unable to access some websites? Worried about unprotected Wi-Fi hotspots? Want to be anonymous and protected from surveillance and hackers? Touch VPN – the Secure VPN Proxy– is the best solution!</p>
+            </a>
+        </div>
+        <div class="city">
+            <a href="404.html"> <img src="image/browserstack.jpg" width="100%">
+                <h3>BrowserStack</h3>
+                <p>When you are ready to test the website: - Click on the extension button - Select your OS + Browser combination This will open up your website through BrowserStack in your selected browser + OS. </p>
+            </a>
+        </div>
+        <div class="city">
+            <a href="404.html"> <img src="image/pinterest.jpg" width="100%">
+                <h3>Pinterest</h3>
+                <p>Save creative ideas from around the web with the official Pinterest Save button for your browser. Just click the Pinterest button next time you find something interesting that you want to save for later. </p>
+            </a>
+        </div>
+        <div class="leftSide">
+            <div class="common-post">
+                </br>
+                <//br>
+                <h2>Community SpotLight</h2> </br>
+                <h3>
 			<img src="image/userIcon.png">
 			<a href="404.html">
 				Announcing ASP.NET Core 1.0
 			</a>
 		</h3>
-		<p>Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-		</div>
-	<div class="common-post">
-		<h3>
+                <p>Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+            </div>
+            <div class="common-post">
+                <h3>
 			<img src="image/userIcon.png">
 			<a href="404.html">
 				Preventing XSRF in AngularJS Apps with ASP.NET CORE Anti-Forgery Middleware
 			</a>
 		</h3>
-		<p>Here's a tutorial from Fiyaz Hasan covering anti-forgery in Angular / ASP.NET Core applications. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-	</div>
-	<div class="common-post">
-		<h3>
+                <p>Here's a tutorial from Fiyaz Hasan covering anti-forgery in Angular / ASP.NET Core applications. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+            </div>
+            <div class="common-post">
+                <h3>
 			<img src="image/userIcon.png">
 			<a href="404.html">
 				Running ASP.NET Core 1.0-RC2 in Docker
 			</a>
 		</h3>
-		<p>Sergio Sisternes walks through the process of deploying an ASP.NET Core application to Docker, along with some interesting "extra credit" steps once that's running. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-	</div>
-	<div class="common-post">
-		<h3>
+                <p>Sergio Sisternes walks through the process of deploying an ASP.NET Core application to Docker, along with some interesting "extra credit" steps once that's running. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+            </div>
+            <div class="common-post">
+                <h3>
 			<img src="image/userIcon.png">
 			<a href="404.html">
 				Build customizable Language Switcher Tag Helper with Bootstrap
 			</a>
 		</h3>
-		<p>Hisham Bin Ateya shares a nice Bootstrap based language switcher tag helper. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
-		<br> </div>
-	</div>
-<div class="rightSide">
-	<a href="404.html"><img src="image/Ofc365_Enterprise_1201_368x207_EN_US.jpg"></a>
-	<a href="404.html"><img src="image/VisualStudio_368x207.png"></a>
-	<a href="404.html"><img src="image/Win10_EntEval_0729_368x207_EN_US.jpg"></a>
-</div>
-</div>
-<!--======================= Footer ===========================-->
-<div class="footer">
-	<div class="footContainer">
-		<div class="middleFooter">
-			<p>
-			<h6>Learn</h6></p>
-		<a href="404.html">
-			<p>Windows</p>
-		</a>
-		<a href="404.html">
-			<p>Office</p>
-		</a>
-		<a href="404.html">
-			<p>Skype</p>
-		</a>
-		<a href="404.html">
-			<p>Outlook</p>
-		</a>
-		<a href="404.html">
-			<p>OneDrive</p>
-		</a>
-		<a href="404.html">
-			<p>MSN</p>
-		</a>
-	</div>
-	<div class="middleFooter">
-		<p>
-		<h6>Devices</h6></p>
-	<a href="404.html">
-		<p>Downtify Surface</p>
-	</a>
-	<a href="404.html">
-		<p>Xbox</p>
-	</a>
-	<a href="404.html">
-		<p>PC and laptops</p>
-	</a>
-	<a href="404.html">
-		<p>Downtify Lumia</p>
-	</a>
-	<a href="404.html">
-		<p>Microsft Band</p>
-	</a>
-	<a href="404.html">
-		<p>Downtify HoloLens</p>
-	</a>
-</div>
-<div class="middleFooter">
-	<p>
-	<h6>Downtify Store</h6></p>
-<a href="404.html">
-	<p>View account</p>
-</a>
-<a href="404.html">
-	<p>Order tracking</p>
-</a>
-<a href="404.html">
-	<p>Retail store locations</p>
-</a>
-<a href="404.html">
-	<p>Returns</p>
-</a>
-<a href="404.html">
-	<p>Sales &amp; support</p>
-</a>
-</div>
-<div class="middleFooter">
-	<p>
-	<h6>Downloads</h6></p>
-<a href="404.html">
-	<p>Download Center</p>
-</a>
-<a href="404.html">
-	<p>Windows 10 Apps</p>
-</a>
-<a href="404.html">
-	<p>Office Apps</p>
-</a>
-<a href="404.html">
-	<p>Downtify Lumia Apps</p>
-</a>
-<a href="404.html">
-	<p>Internet Explorer</p>
-</a>
-</div>
-<div class="middleFooter">
-	<p>
-	<h6>Values</h6></p>
-<a href="404.html">
-	<p>Diversity and inclusion</p>
-</a>
-<a href="404.html">
-	<p>Accessibility</p>
-</a>
-<a href="404.html">
-	<p>Environment</p>
-</a>
-<a href="404.html">
-	<p>Downtify Philanthropies</p>
-</a>
-<a href="404.html">
-	<p>Corporate Social Responsibility</p>
-</a>
-<a href="404.html">
-	<p>Privacy at Downtify</p>
-</a>
-</div>
-<div class="middleFooter">
-	<p>
-	<h6>Company</h6></p>
-<a href="404.html">
-	<p>Careers</p>
-</a>
-<a href="404.html">
-	<p>About Downtify</p>
-</a>
-<a href="404.html">
-	<p>Company news</p>
-</a>
-<a href="404.html">
-	<p>Investors</p>
-</a>
-<a href="404.html">
-	<p>Research</p>
-</a>
-<a href="404.html">
-	<p>Site map</p>
-</a>
-</div>
-</div>
-</div>
+                <p>Hisham Bin Ateya shares a nice Bootstrap based language switcher tag helper. Jeff Fritz announces the release of ASP.NET Core 1.0 with a great rundown on some of the top features and everything you need to know about how to get started.</p>
+                <br> </div>
+        </div>
+        <div class="rightSide">
+            <a href="404.html"><img src="image/Ofc365_Enterprise_1201_368x207_EN_US.jpg"></a>
+            <a href="404.html"><img src="image/VisualStudio_368x207.png"></a>
+            <a href="404.html"><img src="image/Win10_EntEval_0729_368x207_EN_US.jpg"></a>
+        </div>
+    </div>
+    <!--======================= Footer ===========================-->
+    <div class="footer">
+        <div class="footContainer">
+            <div class="middleFooter">
+                <p>
+                    <h6>Learn</h6></p>
+                <a href="404.html">
+                    <p>Windows</p>
+                </a>
+                <a href="404.html">
+                    <p>Office</p>
+                </a>
+                <a href="404.html">
+                    <p>Skype</p>
+                </a>
+                <a href="404.html">
+                    <p>Outlook</p>
+                </a>
+                <a href="404.html">
+                    <p>OneDrive</p>
+                </a>
+                <a href="404.html">
+                    <p>MSN</p>
+                </a>
+            </div>
+            <div class="middleFooter">
+                <p>
+                    <h6>Devices</h6></p>
+                <a href="404.html">
+                    <p>Downtify Surface</p>
+                </a>
+                <a href="404.html">
+                    <p>Xbox</p>
+                </a>
+                <a href="404.html">
+                    <p>PC and laptops</p>
+                </a>
+                <a href="404.html">
+                    <p>Downtify Lumia</p>
+                </a>
+                <a href="404.html">
+                    <p>Microsft Band</p>
+                </a>
+                <a href="404.html">
+                    <p>Downtify HoloLens</p>
+                </a>
+            </div>
+            <div class="middleFooter">
+                <p>
+                    <h6>Downtify Store</h6></p>
+                <a href="404.html">
+                    <p>View account</p>
+                </a>
+                <a href="404.html">
+                    <p>Order tracking</p>
+                </a>
+                <a href="404.html">
+                    <p>Retail store locations</p>
+                </a>
+                <a href="404.html">
+                    <p>Returns</p>
+                </a>
+                <a href="404.html">
+                    <p>Sales &amp; support</p>
+                </a>
+            </div>
+            <div class="middleFooter">
+                <p>
+                    <h6>Downloads</h6></p>
+                <a href="404.html">
+                    <p>Download Center</p>
+                </a>
+                <a href="404.html">
+                    <p>Windows 10 Apps</p>
+                </a>
+                <a href="404.html">
+                    <p>Office Apps</p>
+                </a>
+                <a href="404.html">
+                    <p>Downtify Lumia Apps</p>
+                </a>
+                <a href="404.html">
+                    <p>Internet Explorer</p>
+                </a>
+            </div>
+            <div class="middleFooter">
+                <p>
+                    <h6>Values</h6></p>
+                <a href="404.html">
+                    <p>Diversity and inclusion</p>
+                </a>
+                <a href="404.html">
+                    <p>Accessibility</p>
+                </a>
+                <a href="404.html">
+                    <p>Environment</p>
+                </a>
+                <a href="404.html">
+                    <p>Downtify Philanthropies</p>
+                </a>
+                <a href="404.html">
+                    <p>Corporate Social Responsibility</p>
+                </a>
+                <a href="404.html">
+                    <p>Privacy at Downtify</p>
+                </a>
+            </div>
+            <div class="middleFooter">
+                <p>
+                    <h6>Company</h6></p>
+                <a href="404.html">
+                    <p>Careers</p>
+                </a>
+                <a href="404.html">
+                    <p>About Downtify</p>
+                </a>
+                <a href="404.html">
+                    <p>Company news</p>
+                </a>
+                <a href="404.html">
+                    <p>Investors</p>
+                </a>
+                <a href="404.html">
+                    <p>Research</p>
+                </a>
+                <a href="404.html">
+                    <p>Site map</p>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
